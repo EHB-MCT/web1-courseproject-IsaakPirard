@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Dancing Script", cursive;
+	margin: 1%;
+	font-size: 30px;
+}
+
+.wrapper {
+	width: 90%;
+	background-color: goldenrod;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-template-rows: repeat(10, minmax(100px, auto));
+	position: relative;
+}
+
+#grid {
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	width: 100%;
+	height: 100%;
+}
+
+#grid p {
+	border: solid 1px gold;
+	margin: 0;
+	opacity: 0;
+}
+
+.header {
+	grid-column: 8 /24;
+	grid-row: 2 / 3;
+}
+
+.box {
+	grid-column: 2 / 24;
+	grid-row: 4/ 6;
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	grid-column: 10 / 14;
+	grid-row: 3/ 4;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+.Buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	grid-column: 5 / 24;
+	grid-row: 5 / 6;
+	margin: 20px 0;
+}
+
+.Buttons .firstButton,
+.Buttons .secondButton,
+.Buttons .thirdButton,
+.Buttons .fourthButton {
+	width: 23%;
+	height: auto;
+}
+
+.Buttons a {
+	display: block;
+	cursor: pointer;
+}
+
+.Buttons a img {
+	transition: transform 0.3s ease;
+}
+
+.Buttons a:hover img {
+	transform: scale(1.05);
+}
+*/
+
+img {
+	width: 100%;
+}
+
+.firstButton {
+	grid-column: 4 / 6;
+	grid-row: 4 / 5;
+}
+
+.secondButton {
+	grid-column: 9 / 12;
+	grid-row: 4 / 5;
+}
+
+.thirdButton {
+	grid-column: 15 / 18;
+	grid-row: 4 / 5;
+}
+
+.fourthButton {
+	grid-column: 20 / 22;
+	grid-row: 4 / 6;
+}
